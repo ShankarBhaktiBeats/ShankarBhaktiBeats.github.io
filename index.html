@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShankarBhagtiBeats</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #fff9f0, #ffe0c2);
+      color: #4a2c2a;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(90deg, #ff6a00, #ff3300);
+      color: white;
+      padding: 20px 10px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4500, 0 0 40px #ff0000;
+    }
+    .bio {
+      margin: 20px;
+      font-size: 18px;
+      color: #5a3a2c;
+    }
+    .links {
+      margin: 40px 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 15px;
+      padding: 14px 28px;
+      font-size: 18px;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff;
+      position: relative;
+      overflow: hidden;
+      /* Neon border with RGB */
+      border: 3px solid transparent;
+      background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+      background-size: 1500% 1500%;
+      animation: rgbGlow 10s linear infinite, neonFlicker 2s infinite;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+                  0 0 40px rgba(255, 0, 0, 0.7),
+                  0 0 60px rgba(0, 255, 255, 0.6);
+      transition: transform 0.3s ease;
+    }
+    .links a::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 12px;
+      background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+      background-size: 1500% 1500%;
+      z-index: -1;
+      animation: rgbGlow 6s linear infinite, neonFlicker 2s infinite;
+      filter: blur(8px);
+    }
+    .links a:hover {
+      transform: scale(1.15);
+      animation: rgbGlow 6s linear infinite, neonFlicker 1.2s infinite;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 1), 
+                  0 0 60px rgba(255, 0, 255, 0.9),
+                  0 0 90px rgba(0, 255, 255, 0.9);
+    }
+    /* Smooth RGB animation */
+    @keyframes rgbGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    /* Neon Flicker animation */
+    @keyframes neonFlicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        filter: brightness(1.2);
+      }
+      20%, 24%, 55% {
+        opacity: 0.6;
+        filter: brightness(0.6);
+      }
+    }
+    .visit {
+      margin-top: 50px;
+      padding: 25px;
+      background: #fff3e0;
+      border-top: 3px solid #e65c00;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+    }
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background: linear-gradient(90deg, #ff6a00, #ff3300);
+      color: white;
+      font-size: 14px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4500;
+    }
+  </style>
+</head>
+<body>
+  <header>🙏 ShankarBhagtiBeats 🙏</header>
+  <section class="bio">
+    Devotional related videos, bhajans, shorts & beats. <br>
+    Spreading positivity and devotion through music 🎶
+  </section>
+  <section class="links">
+    <a href="https://www.instagram.com/shankarrrrr_99" target="_blank">Instagram</a>
+    <a href="https://youtube.com/@shankarbhagtibeats" target="_blank">YouTube</a>
+  </section>
+  <section class="visit">
+    <h2>🌸 My Other Sites / Visit Also 🌸</h2>
+    <p>Stay tuned for more devotional vibes and links 🙌</p>
+  </section>
+  <footer>
+    © 2025 ShankarBhagtiBeats | All Rights Reserved
+  </footer>
+</body>
+</html>
